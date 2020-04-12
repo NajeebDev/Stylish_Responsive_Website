@@ -1,1 +1,45 @@
 @import "_reset";
+
+.header{
+    background-image: url(/images/banner-landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+
+    &__nav{
+        text-align: right;
+        font-size: 25px;
+
+        & .menu-icon{
+            padding: 30px;
+        }
+    }
+
+    &__text{
+        padding: 150px 100px;
+
+        & .text{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+        }
+    }
+
+    & hr{
+        border: 1.5px solid;
+        margin: 20px 0;
+    }
+    &__button{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid white;
+        width: 15%;
+        height: 25px;
+    }
+}

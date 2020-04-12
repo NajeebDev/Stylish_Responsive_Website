@@ -1,2 +1,40 @@
 body {
-  margin: 0; }
+  margin: 0;
+  color: white;
+  font-family: 'font-awesome-brands'; }
+
+@font-face {
+  font-family: 'font-awesome-brands';
+  src: url("/fontawesome/webfonts/Roboto-Regular.ttf") format("truetype"), url("/fontawesome/webfonts/fa-brands-400.eot") format("embedded-opentype"), url("/fontawesome/webfonts/fa-brands-400.svg") format("svg"), url("/fontawesome/webfonts/fa-brands-400.ttf") format("truetype"), url("/fontawesome/webfonts/fa-brands-400.woff") format("woff"), url("/fontawesome/webfonts/fa-brands-400.woff2") format("woff2"), url("/fontawesome/webfonts/fa-regular-400.eot") format("embedded-opentype"), url("/fontawesome/webfonts/fa-regular-400.svg") format("svg"), url("/fontawesome/webfonts/fa-regular-400.ttf") format("truetype"), url("/fontawesome/webfonts/fa-regular-400.woff") format("woff"), url("/fontawesome/webfonts/fa-regular-400.woff2") format("woff2"), url("/fontawesome/webfonts/fa-solid-900.eot") format("embedded-opentype"), url("/fontawesome/webfonts/fa-solid-900.svg") format("svg"), url("/fontawesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/fontawesome/webfonts/fa-solid-900.woff") format("woff"), url("/fontawesome/webfonts/fa-solid-900.woff2") format("woff2"); }
+
+.header {
+  background-image: url(/images/banner-landscape.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px; }
+  .header__nav {
+    text-align: right;
+    font-size: 25px; }
+    .header__nav .menu-icon {
+      padding: 30px; }
+  .header__text {
+    padding: 150px 100px; }
+    .header__text .text {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      width: 50%; }
+  .header hr {
+    border: 1.5px solid;
+    margin: 20px 0; }
+  .header__button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid white;
+    width: 15%;
+    height: 25px; }

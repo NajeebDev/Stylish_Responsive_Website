@@ -1,3 +1,30 @@
 body {
   margin: 0;
+  color: white;
+  font-family: 'font-awesome-brands';
+}
+
+@font-face {
+  font-family: 'font-awesome-brands';
+  src: 
+  url('/fontawesome/webfonts/Roboto-Regular.ttf') format('truetype'),
+
+  url('/fontawesome/webfonts/fa-brands-400.eot') format('embedded-opentype'),
+  url('/fontawesome/webfonts/fa-brands-400.svg') format('svg'),
+  url('/fontawesome/webfonts/fa-brands-400.ttf') format('truetype'),
+  url('/fontawesome/webfonts/fa-brands-400.woff') format('woff'),
+  url('/fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
+
+  url('/fontawesome/webfonts/fa-regular-400.eot') format('embedded-opentype'),
+  url('/fontawesome/webfonts/fa-regular-400.svg') format('svg'),
+  url('/fontawesome/webfonts/fa-regular-400.ttf') format('truetype'),
+  url('/fontawesome/webfonts/fa-regular-400.woff') format('woff'),
+  url('/fontawesome/webfonts/fa-regular-400.woff2') format('woff2'),
+
+  url('/fontawesome/webfonts/fa-solid-900.eot') format('embedded-opentype'),
+  url('/fontawesome/webfonts/fa-solid-900.svg') format('svg'),
+  url('/fontawesome/webfonts/fa-solid-900.ttf') format('truetype'),
+  url('/fontawesome/webfonts/fa-solid-900.woff') format('woff'),
+  url('/fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
+
 }
