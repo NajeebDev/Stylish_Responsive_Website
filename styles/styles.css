@@ -7,19 +7,23 @@ body {
   font-family: 'font-awesome-brands';
   src: url("/fontawesome/webfonts/Roboto-Regular.ttf") format("truetype"), url("/fontawesome/webfonts/fa-brands-400.eot") format("embedded-opentype"), url("/fontawesome/webfonts/fa-brands-400.svg") format("svg"), url("/fontawesome/webfonts/fa-brands-400.ttf") format("truetype"), url("/fontawesome/webfonts/fa-brands-400.woff") format("woff"), url("/fontawesome/webfonts/fa-brands-400.woff2") format("woff2"), url("/fontawesome/webfonts/fa-regular-400.eot") format("embedded-opentype"), url("/fontawesome/webfonts/fa-regular-400.svg") format("svg"), url("/fontawesome/webfonts/fa-regular-400.ttf") format("truetype"), url("/fontawesome/webfonts/fa-regular-400.woff") format("woff"), url("/fontawesome/webfonts/fa-regular-400.woff2") format("woff2"), url("/fontawesome/webfonts/fa-solid-900.eot") format("embedded-opentype"), url("/fontawesome/webfonts/fa-solid-900.svg") format("svg"), url("/fontawesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/fontawesome/webfonts/fa-solid-900.woff") format("woff"), url("/fontawesome/webfonts/fa-solid-900.woff2") format("woff2"); }
 
-.header {
-  background-image: url(/images/banner-landscape.jpg);
+.bg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px; }
+  height: 400px; }
+
+.header {
+  background-image: url(/images/banner-landscape.jpg);
+  height: 500px; }
   .header__nav {
     text-align: right;
-    font-size: 25px; }
+    font-size: 25px;
+    padding: 15px 0; }
     .header__nav .menu-icon {
       padding: 30px; }
   .header__text {
-    padding: 150px 100px; }
+    padding: 100px; }
     .header__text .text {
       display: flex;
       justify-content: space-between;
@@ -36,5 +40,85 @@ body {
     align-items: center;
     padding: 10px;
     border: 2px solid white;
-    width: 15%;
+    width: 40%;
     height: 25px; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, auto); }
+  .container .item1, .container .item5 {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .container .item3, .container .item8 {
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .container .item4, .container .item9 {
+    grid-column-start: 4;
+    grid-column-end: 6; }
+  .container .item2, .container .item6 {
+    grid-column-start: 3;
+    grid-column-end: 6; }
+  .container .item7 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    border: 1px solid red; }
+  .container .item1 {
+    background-image: url(/images/banner-person.jpg); }
+    .container .item1 .bg-color {
+      background-color: rgba(7, 189, 250, 0.561);
+      height: 100%;
+      position: relative; }
+  .container .item2 {
+    background-image: url(/images/banner-city.jpg); }
+    .container .item2 .bg-color {
+      background-color: rgba(120, 7, 250, 0.561);
+      height: 100%;
+      position: relative; }
+  .container .item3 {
+    background-image: url(/images/banner-mountains.jpg); }
+    .container .item3 .bg-color {
+      background-color: rgba(250, 96, 7, 0.561);
+      height: 100%;
+      position: relative; }
+  .container .item4 {
+    background-image: url(/images/banner-fox.jpg); }
+    .container .item4 .bg-color {
+      background-color: rgba(218, 186, 44, 0.561);
+      height: 100%;
+      position: relative; }
+  .container .item5 {
+    background-image: url(/images/banner-station.jpg); }
+    .container .item5 .bg-color {
+      background-color: rgba(19, 129, 192, 0.561);
+      height: 100%;
+      position: relative; }
+  .container .item6 {
+    background-image: url(/images/banner-camera.jpg); }
+    .container .item6 .bg-color {
+      background-color: rgba(79, 219, 36, 0.561);
+      height: 100%;
+      position: relative; }
+  .container .content {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    width: 160px; }
+    .container .content h2, .container .content p {
+      margin: 0; }
+  .container .item7 {
+    background-color: #222222;
+    height: 200px;
+    padding: 25px; }
+    .container .item7 .line {
+      width: 150px; }
+      .container .item7 .line hr {
+        border: 1px solid; }
+    .container .item7__button {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      border: 2px solid white;
+      width: 15%;
+      height: 25px; }
