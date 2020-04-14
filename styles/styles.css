@@ -18,7 +18,7 @@ body {
   flex-direction: row;
   align-items: center; }
 
-i {
+.icon {
   border: 1px solid white;
   border-radius: 50%;
   color: rgba(38, 41, 70, 0.932);
