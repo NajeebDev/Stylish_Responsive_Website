@@ -210,12 +210,19 @@ footer {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    .container .item1, .container .item3, .container .item5 {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .container .item2, .container .item4, .container .item6 {
+      grid-column-start: 2;
+      grid-column-end: 3; }
     .container .item1, .container .item2, .container .item3, .container .item4, .container .item5, .container .item6 {
       height: 250px; }
       .container .item1 .content, .container .item2 .content, .container .item3 .content, .container .item4 .content, .container .item5 .content, .container .item6 .content {
         top: 90px; }
     .container .item7 {
       height: 270px; }
-    .container .contact-form, .container .contact-details {
+    .container .contact-form,
+    .container .contact-details {
       grid-column-start: 1;
       grid-column-end: 6; } }
