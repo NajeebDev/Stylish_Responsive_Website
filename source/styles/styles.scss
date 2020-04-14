@@ -272,3 +272,69 @@ footer{
     background-color: rgba(61, 66, 105, 0.932);
     text-align: center;
 }
+
+@media screen and (min-width: 526px) and (max-width: 1037px){
+    .header{
+        height: 350px;
+    
+        &__nav{
+            font-size: 20px;
+            padding: 10px;
+
+            & .menu-icon{
+                padding: 10px ;
+            }    
+        }
+    
+        &__text{
+            padding: 0 25px;
+    
+            & .text{
+                display: flex;
+                justify-content: left;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 70%;
+            }
+        }
+        
+        & hr{
+            border: 1px solid white;
+            margin: 20px 0;
+        }
+
+        &__button{
+            border: 1px solid white;
+        }
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    
+        & .item1,  .item2, .item3, .item4, .item5, .item6{
+            height: 250px;
+
+            .content{
+                top: 90px;
+            }
+        }
+    
+    
+    
+        .item7{
+            height: 270px;
+        }
+    
+        .contact-form, .contact-details{
+            grid-column-start: 1;
+            grid-column-end: 6;    
+        }
+    }
+    
+}
+
+@media screen and (max-width: 525){
+    
+}

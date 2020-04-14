@@ -185,3 +185,37 @@ body {
 footer {
   background-color: rgba(61, 66, 105, 0.932);
   text-align: center; }
+
+@media screen and (min-width: 526px) and (max-width: 1037px) {
+  .header {
+    height: 350px; }
+    .header__nav {
+      font-size: 20px;
+      padding: 10px; }
+      .header__nav .menu-icon {
+        padding: 10px; }
+    .header__text {
+      padding: 0 25px; }
+      .header__text .text {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 70%; }
+    .header hr {
+      border: 1px solid white;
+      margin: 20px 0; }
+    .header__button {
+      border: 1px solid white; }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .container .item1, .container .item2, .container .item3, .container .item4, .container .item5, .container .item6 {
+      height: 250px; }
+      .container .item1 .content, .container .item2 .content, .container .item3 .content, .container .item4 .content, .container .item5 .content, .container .item6 .content {
+        top: 90px; }
+    .container .item7 {
+      height: 270px; }
+    .container .contact-form, .container .contact-details {
+      grid-column-start: 1;
+      grid-column-end: 6; } }
