@@ -226,3 +226,33 @@ footer {
     .container .contact-details {
       grid-column-start: 1;
       grid-column-end: 6; } }
+
+@media screen and (max-width: 525px) {
+  .header {
+    height: 350px; }
+    .header__nav {
+      font-size: 15px;
+      padding: 10px; }
+      .header__nav .menu-icon {
+        padding: 10px; }
+    .header__text {
+      padding: 10px 25px; }
+      .header__text .text {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%; }
+    .header hr {
+      border: 1px solid white;
+      margin: 20px 0; }
+    .header__button {
+      border: 1px solid white; }
+  .container {
+    display: unset; }
+    .container .item1, .container .item2, .container .item3, .container .item4, .container .item5, .container .item6 {
+      height: 300px; }
+      .container .item1 .content, .container .item2 .content, .container .item3 .content, .container .item4 .content, .container .item5 .content, .container .item6 .content {
+        top: 100px; }
+    .container .item7 {
+      height: 300px; } }

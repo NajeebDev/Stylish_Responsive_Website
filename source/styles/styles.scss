@@ -348,6 +348,55 @@ footer{
     
 }
 
-@media screen and (max-width: 525){
+@media screen and (max-width: 525px){
+    .header{
+        height: 350px;
     
+        &__nav{
+            font-size: 15px;
+            padding: 10px;
+
+            & .menu-icon{
+                padding: 10px;
+                
+            }    
+        }
+    
+        &__text{
+            padding: 10px 25px;
+    
+            & .text{
+                display: flex;
+                justify-content: left;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        
+        & hr{
+            border: 1px solid white;
+            margin: 20px 0;
+        }
+
+        &__button{
+            border: 1px solid white;
+        }
+    }
+
+    .container{
+        display: unset;
+
+        & .item1,  .item2, .item3, .item4, .item5, .item6{
+            height: 300px;
+
+            .content{
+                top: 100px;
+            }
+        }
+
+        & .item7{
+            height: 300px;
+        }
+    }
 }
